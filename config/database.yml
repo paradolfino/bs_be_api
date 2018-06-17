@@ -5,11 +5,11 @@ default: &default
 
 development: &development
   <<: *default
-  database: bookstore-backend_development
+  database: bookstore_backend_development
 
 test:
   <<: *development
-  database: bookstore-backend_test
+  database: bookstore_backend_test
 
 production:
   url: <%= ENV['DATABASE_URL'] %>
